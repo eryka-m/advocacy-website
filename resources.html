@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+
+<html>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Eryka Matos">
+<meta name="description" content="Pagina 'Sobre Causa' de FEPR sobre feminicidios en Puerto Rico">
+<meta name="keywords" content="Puerto Rico, PR, femicidio, feminicidio, homicidio, mujeres y niñas,
+recursos, noticias, articulos, videos, transfemicidio, lesbicidio, feticidio">
+
+<head>
+    <title>Sobre - FEPR</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+
+
+    <style>
+        /* ===== RESET AND VARIABLES ===== */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    :root {
+        --color-primary: #000000;
+        --color-primary-dark: #4a4e4c;
+        --color-hover: #4a4e4c;
+        --color-success: #4caf50;
+        --color-error: #f44336;
+        --color-warning: #ff9800;
+        --color-text: #333;
+        --color-text-light: #555;
+        --color-bg: #f4f4f4;
+        --color-white: #ffffff;
+        --color-border: #ddd;
+        --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        --transition: all 0.3s ease;
+    }
+
+
+        /* ===== GENERAL STYLE ===== */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+
+        /* ===== HEADER ===== */
+    header {
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+        color: var(--color-white);
+        text-align: center;
+        padding: 25px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+
+    header h1 {
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+
+
+        /* ===== NAVEGATION ===== */
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+
+    nav a {
+        color: var(--color-white);
+        text-decoration: none;
+        padding: 10px 15px;
+        font-size: 16px;
+        border-radius: 6px;
+        transition: var(--transition);
+    }
+
+
+    nav a:hover,
+    nav a:focus {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+    }
+
+
+        /* ===== MAIN CONTENT ===== */
+    main {
+        flex: 1;
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+    section {
+        background: var(--color-white);
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        animation: slideUp 0.6s ease;
+    }
+
+
+    @keyframes slideUp {
+
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+
+    body {
+        background: #f4f4f4;
+        color: #000000;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+    }
+
+
+    p {
+        margin: 0 0 13px 0;
+    }
+
+
+    a {
+        color: #000000;
+    }
+
+
+    .center { text-align: center; }
+
+
+    .container {
+        width: 95%;
+        max-width: 1220px;
+        margin: 0 auto;
+    }
+
+
+    .episode {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        position: relative;
+    }
+
+
+    .episode__number {
+        font-size: 10vw;
+        font-weight: 600;
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        text-align: left;
+        height: calc(10vw + 20px);
+        transition: all 0.2s ease-in;
+    }
+
+
+    .episode__content {
+        border-top: 2px solid #000000;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-gap: 10px;
+        padding: 15px 0;
+    }
+
+
+    .episode__content .title {
+        font-weight: 600
+    }
+
+
+    .episode__content .story {
+        line-height: 26px;
+    }
+
+
+    @media (max-width: 600px) {
+    
+        .episode__content {
+            grid-template-columns: 1fr;
+            }
+    }
+
+
+    @media (max-width: 576px) {
+        .episode__content .story {
+            font-size: 15px;
+        }
+    }
+
+
+    hr {
+        border: none;
+        border-top: 2px solid var(--color-bg);
+        margin: 30px 0;
+    }
+
+
+    table, th, td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 15px;
+    }
+
+
+    ol {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        --color-text: #333;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+
+        /* ===== BUTTONS ===== */
+    .button-group {
+        display: flex;
+        gap: 15px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+    }
+
+
+    button {
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-hover) 100%);
+        color: var(--color-white);
+        padding: 12px 30px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: var(--transition);
+        box-shadow: 0 4px 10px rgba(1, 50, 32, 0.3);
+    }
+
+
+    button:hover:not(:disabled) {
+        background: linear-gradient(135deg, var(--color-hover) 0%, var(--color-primary) 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(1, 50, 32, 0.4);
+    }
+
+
+    button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+
+    .btn-secondary {
+        background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+    }
+
+
+    .btn-secondary:hover:not(:disabled) {
+        background: linear-gradient(135deg, #5a6268 0%, #6c757d 100%);
+    }
+
+
+        /* ===== RESULT ===== */
+    #resultado {
+        margin-top: 25px;
+        padding: 20px;
+        border-radius: 8px;
+        display: none;
+        animation: fadeIn 0.5s ease;
+    }
+
+
+    #resultado.success {
+        background-color: #e8f5e9;
+        border-left: 4px solid var(--color-success);
+    }
+
+
+
+    #resultado h4 {
+        color: var(--color-success);
+        margin-bottom: 15px;
+    }
+
+
+    #resultado p {
+        margin: 8px 0;
+        font-size: 0.95rem;
+    }
+
+
+    @keyframes fadeIn {
+
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+        /* ===== IMAGE ===== */
+    .demo-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        margin: 20px 0;
+        transition: var(--transition);
+    }
+
+
+    .demo-image:hover {
+        transform: scale(1.02);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .image-fallback {
+        display: none;
+        background-color: var(--color-bg);
+        padding: 40px;
+        text-align: center;
+        color: #999;
+        font-style: italic;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+        
+
+        /* ===== FOOTER ===== */
+    footer {
+        background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+        margin-top: auto;
+        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+
+    footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+        /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+
+        header h1 {
+            font-size: 1.3rem;
+        }
+
+
+        nav {
+            gap: 10px;
+        }
+
+
+        nav a {
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+
+
+        section {
+            padding: 25px 20px;
+        }
+
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+
+        .button-group {
+            flex-direction: column;
+        }
+
+
+        button {
+            width: 100%;
+        }
+        }
+
+
+    @media (max-width: 480px) {
+
+        main {
+            padding: 20px 10px;
+        }
+
+
+
+        section {
+            padding: 20px 15px;
+        }
+    }
+
+
+
+        /* ===== ACCESSIBILITY ===== */
+    *:focus-visible {
+        outline: 3px solid var(--color-hover);
+        outline-offset: 2px;
+    }
+
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <header style="text-align: center">
+        
+        <h1 tabindex="1">FEPR</h1>
+        <nav role="navigation" aria-label="Navegación principal">
+            <a href="file:///Users/eryka/Downloads/advocacy-website/Index1.html" tabindex="2">Inicio</a>
+            <a href="about.html" tabindex="3">Sobre</a>
+            <a href="help.html" tabindex="4">Apoyo</a>
+            <a href="resources.html" tabindex="5">Recursos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="center" tabindex="6">Recursos y Noticias</h1>
+            <p tabindex="7">Proveyendo las noticias más recientes y relevantes en el caso de feminicidios.</p>
+        <hr>
+
+            <h2 style="text-align: center;" tabindex="8">Feminicidios</h2>
+
+                <center>
+                <table>
+                    <tr>
+                        <th tabindex="9">Periodismo y articulos academicos</th>
+                        <th tabindex="10">Reportajes y talleres virtuales</th>
+                    </tr>
+
+                    <tr>
+                        <td tabindex="11">"<a href="https://www.todaspr.com/el-movimiento-amplio-de-mujeres-aclara-que-la-ley-del-feminicidio-sigue-vigente/">Ley del 
+                        Feminicidio sigue vigente</a>", <br> pero tenemos nuestras preocupaciones.</td>
+                        <td tabindex="12"><a href="https://www.youtube.com/watch?v=oBtSjYTpzrU&t=7s">Claves y herramientas</a> para detectar <br> situaciones de violencia de género.</td>
+                    </tr>
+
+                    <tr>
+                        <td tabindex="13">Honrando "<a href="https://www.elnuevodia.com/noticias/seguridad/fotogalerias/victimas-de-feminicidio-en-2025-los-rostros-de-la-violencia-machista-en-puerto-rico/">los 
+                        rostros de la violencia <br> machista en Puerto Rico</a>" del 2025.</td>
+                        <td tabindex="14">Discutiendo la violencia de género con el <br> albergue <a href="https://www.youtube.com/watch?v=pxoyw-wM1eQ&t=3s">Casa de Julia Burgos</a>.</td>
+                    </tr>
+
+                    <tr>
+                        <td tabindex="15">"<a href="https://observatoriopr.org/download/2025-trimestre-iv-feminicidios-desapariciones-y-violencia-de-genero-30-de-noviembre-de-2025/">Feminicidios, 
+                        desapariciones y violencia <br> de género</a>" reportados hasta el 30 de noviembre.</td>
+                        <td tabindex="16">Violencia doméstica: <a href="https://www.youtube.com/watch?v=eCGvb0VZ5hQ">¿Funciona el <br> programa de desvío para agresores?</td>
+                    </tr>
+                </table>
+                </center>
+
+            <br>
+            <br>
+
+            <h2 style="text-align: center;" tabindex="17">Transfemicidios</h2>
+
+                <center>
+                <table>
+                    <tr>
+                        <th tabindex="18">Periodismo y articulos academicos</th>
+                        <th tabindex="19">Reportajes y talleres virtuales</th>
+                    </tr>
+
+                    <tr>
+                        <td tabindex="20">"<a href="https://www.upr.edu/firman-acuerdo-interagencial-para-educar-a-empleados-publicos-sobre-los-protocolos-de-feminicidio-y-transfeminicidio/">Acuerdo 
+                        interagencial</a>" sobre los <br> protocolos de feminicidio y transfeminicidio.</td>
+                        <td tabindex="21"><a href="https://www.youtube.com/watch?v=GpqXXOp524U">Cuestionan a las autoridades</a> por manejo <br> de transfeminicidios.</td>
+                    </tr>
+
+                    <tr>
+                        <td tabindex="22">Transfeminicidios en Puerto Rico: <a href="https://pridesocietymagazine.com/transfeminicidios-en-puerto-rico-violencia-invisibilizada/"><br> violencia invisibilizada</a>.</td>
+                        <td tabindex="23">¿Quién mató a Alexa? <a href="https://www.youtube.com/watch?v=GZBOrHz8A1E">FBI ofrece recompensa</a> <br> para capturar al asesino.</td>
+                    </tr>
+
+                    <tr>
+                        <td tabindex="24">"<a href="https://www.metro.pr/noticias/2024/02/02/policia-activa-protocolo-de-transfeminicidio-por-muerte-violenta-en-santurce/">Protocolo de transfeminicidio</a>" para <br> la policía de Puerto Rico.</td>
+                        <td tabindex="25"><a href="https://www.youtube.com/watch?v=ZOezQirM9T8">El estado derecho de los <br> transfeminicidios</a> en Puerto Rico.</td>
+                    </tr>
+                </table>
+                </center>
+
+                <br>
+
+                <p style="text-align: center;" tabindex="26">Siga el enlace subrayado para más información.</p>
+        </section>
+    </main>
+
+                <br>
+
+
+<footer>
+        <h5><a style="text-decorations="none"; color="inherit"; href="about.html" tabindex="27">Sobre FEPR</a></h5>
+            <hr>
+
+        <h5><a href="help.html" tabindex="28">Apoya la Causa</a></h5>
+            <hr>
+        
+        <h5><a href="resources.html" tabindex="29">Recursos y Noticias</a></h5>
+            <hr>
+
+        <p style="color:#ffffff" tabindex="30">Feminicidios en Puerto Rico
+            <br>
+            © 2025 Eryka Matos González</p>
+
+    </footer>
+
+</body>
+</html>
